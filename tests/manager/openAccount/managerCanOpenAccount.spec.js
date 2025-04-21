@@ -35,7 +35,7 @@ const openAccountPage = new OpenAccountPage(page);
 const customersListPage = new CustomersListPage(page);
 
 await openAccountPage.open();
-await openAccountPage.selectCustomerName(firstName,lastName);
+await openAccountPage.selectCustomerName(firstName, lastName);
 await openAccountPage.selectCurrency('Dollar');
 await openAccountPage.clickProcessButton();
 await page.reload();

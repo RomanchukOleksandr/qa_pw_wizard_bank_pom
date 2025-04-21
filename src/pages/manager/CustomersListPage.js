@@ -50,7 +50,7 @@ export class CustomersListPage {
     .filter({
       has: this.page.locator('td', { hasText: lastName }),
     });
-    await expect(this.customerRow).toBeFalsy();
+    await expect(customerRow).not.toBeVisible();
   }
 
   async fillToSearchField(word) {
